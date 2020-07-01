@@ -18,7 +18,7 @@ return [
         'http' => [
             'base_uri' => 'https://api.github.com',
             'connect_timeout' => 60,
-            'auth' => ['ric-marangoni', '423e727c45ca40cc11d6b5f9335d0f09185e8455'],
+            'auth' => ['ric-marangoni', '06b91f207b2209d1a7c2dc2c177dc9a6eb868c32'],
             'headers' => [
                 'Content-Type' => 'application/json'
             ]
