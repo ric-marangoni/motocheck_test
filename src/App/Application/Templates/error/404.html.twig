@@ -1,0 +1,13 @@
+{% extends '@layout/default.html.twig' %}
+
+{% block title %}404 Não encontrado{% endblock %}
+
+{% block content %}
+    <div class="w-100 d-flex justify-content-center align-items-center">
+        <div>
+            <img src="{{ asset('images') }}/404.svg" title="Não encontrado" alt="Não encontrado"/>
+            <h1 class="text-center">Página não encontrada!</h1>
+            <p class="text-center">Não encontramos a página, mas você pode usar o menu lateral para acessar páginas autorizadas.</p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+App\Domain\Entity\Owner:
+  type: entity
+  table: owner
+  repositoryClass: App\Infrastructure\Persistence\Doctrine\Repository\DoctrineOwnerRepository
+  id:
+    id:
+      type: integer
+      nullable: false
+      options:
+        comment: 'ID of repo owner'
+  fields:
+    name:
+      type: string
+      nullable: false
+      length: 100
+      options:
+        fixed: false
+        comment: 'Name of owner'
+  lifecycleCallbacks: {}

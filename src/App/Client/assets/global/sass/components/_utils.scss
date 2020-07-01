@@ -1,0 +1,88 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hide_opacity_06 {
+  opacity: 0.6;
+}
+
+.hidden_header > tr {
+  display: none;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
+.dz-container-small {
+  padding: 8px;
+  border: 1px solid rgba(35, 35, 35, 0.2);
+  border-radius: 4px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.is_error_input {
+  border: 1px solid #e53935 !important;
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem #e5393542 !important;
+  }
+}
+
+.no-border-radius {
+  border-radius: 0 0 !important;
+}
+
+.is_error_select {
+  @extend .is_error_input;
+}
+
+.card-body-no-padding {
+  padding: 0 !important;
+}

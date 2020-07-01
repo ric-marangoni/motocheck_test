@@ -1,0 +1,24 @@
+{% extends '@layout/default.html.twig' %}
+
+{% block title %}Repositories{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ asset('dist/vendor/css') }}/reports.css" />
+{% endblock %}
+
+{% block content %}
+    <!-- Content area -->
+    <div class="content flex-grow-1">
+        <div id="vue-content-reports">
+            <transition>
+                <router-view class="view"></router-view>
+            </transition>
+        </div>
+    </div>
+    <!-- /content area -->
+
+{% endblock %}
+
+{% block footer_scripts %}
+    <script src="{{ asset('dist/vendor') }}/reports.js"></script>
+{% endblock %}

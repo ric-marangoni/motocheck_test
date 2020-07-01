@@ -1,0 +1,13 @@
+{% extends '@layout/default.html.twig' %}
+
+{% block title %}403 Não autorizado{% endblock %}
+
+{% block content %}
+    <div class="w-100 d-flex justify-content-center align-items-center">
+        <div>
+            <img src="{{ asset('images') }}/403.svg" title="Acesso não autorizado" alt="Acesso não autorizado"/>
+            <h1 class="text-center">Acesso não autorizado!</h1>
+            <p class="text-center">Você não tem acesso a essa página, utilize o menu lateral para acessar páginas autorizadas.</p>
+        </div>
+    </div>
+{% endblock %}

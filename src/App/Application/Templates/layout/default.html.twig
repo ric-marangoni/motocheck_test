@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Motorcheck :: {% block title %}{% endblock %}</title>
+
+    <!-- default Link files -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    <link href="{{ asset('dist/vendor') }}/css/global.css" rel="stylesheet" type="text/css">
+    {% block styles %}{% endblock %}
+    <!-- /default Link files -->
+
+    <!-- imports JS files -->
+    {% block scripts %}{% endblock %}
+    <!-- /imports JS files -->
+
+</head>
+
+<body>
+    <div class="page-content">
+
+        <div class="content-wrapper position-relative overflow-auto h-100 p-0">
+
+            <!-- Page header -->
+            {% include '@app/flash/messages.html.twig' %}
+            <!-- /page header -->
+
+            {% block content %}{% endblock %}
+
+        </div>
+    </div>
+    <script src="{{ asset('dist/vendor') }}/global.js"></script>
+    {% block footer_scripts %}{% endblock %}
+</body>
+
+</html>

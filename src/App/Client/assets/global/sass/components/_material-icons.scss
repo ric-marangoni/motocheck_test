@@ -1,0 +1,82 @@
+@import 'utils';
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons,
+.mi {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.mi.mi-xxs {
+  font-size: 10px;
+  line-height: 10px;
+  vertical-align: bottom;
+}
+
+.mi.mi-xs {
+  font-size: 16px;
+}
+
+.mi.mi-sm {
+  font-size: 18px;
+}
+
+.mi.mi-2x {
+  font-size: 48px;
+}
+
+.mi.mi-3x {
+  font-size: 72px;
+}
+
+.mi.align-mi {
+  padding-right: 5px;
+  vertical-align: -3px;
+}
+
+.loading {
+  animation: rotation 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-sm {
+  .mi,
+  .material-icons {
+    font-size: 18px;
+  }
+}
+
+.dropdown-item {
+  .mi,
+  .material-icons {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,49 @@
+App\Domain\Entity\GitHubRepository:
+  type: entity
+  table: repository
+  repositoryClass: App\Infrastructure\Persistence\Doctrine\Repository\DoctrineGitHubRepositoryRepository
+  indexes:
+    fk_owner_id:
+      columns:
+        - owner_id
+  id:
+    id:
+      type: integer
+      nullable: false
+      options:
+        comment: 'ID of repository'
+  fields:
+    name:
+      type: string
+      length: 255
+      nullable: false
+    watchers:
+      type: integer
+      nullable: false
+    forks:
+      type: integer
+      nullable: false
+    stars:
+      type: integer
+      nullable: false
+    url:
+      type: string
+      nullable: false
+    createdAt:
+      type: datetime
+      nullable: false
+      options:
+        default: CURRENT_TIMESTAMP
+      column: created_at
+  manyToOne:
+    owner:
+      targetEntity: App\Domain\Entity\Owner
+      cascade: {  }
+      fetch: LAZY
+      mappedBy: null
+      inversedBy: null
+      joinColumns:
+        owner_id:
+          referencedColumnName: id
+      orphanRemoval: false
+  lifecycleCallbacks: {  }

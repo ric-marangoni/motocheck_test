@@ -1,0 +1,10 @@
+.idea
+.env
+composer.phar
+clover.xml
+coveralls-upload.json
+phpunit.xml
+node_modules
+public/dist
+vendor
+yarn.lock

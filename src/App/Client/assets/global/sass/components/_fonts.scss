@@ -1,0 +1,15 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+  font-family: $font-family-roboto;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+.fz-small {
+  font-size: 0.75rem;
+}

@@ -1,0 +1,21 @@
+.badge {
+  padding-top: 5px !important;
+}
+
+/* Fix b-select -- Bootstrap Vue */
+select {
+  &.custom-select {
+    background: none !important;
+  }
+}
+
+.p-1,
+.page-content .content-wrapper {
+  padding: 0 !important;
+}
+
+.scroll {
+  overflow: auto;
+  height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
+}
