@@ -32,6 +32,7 @@ RUN php /tmp/composer-setup.php
 RUN php -r "unlink('/tmp/composer-setup.php');"
 RUN cp -rv composer.phar /usr/bin/composer
 RUN chmod +x /usr/bin/composer
+RUN apt install git -y
 
 RUN echo "[Xdebug]\n" \
           "xdebug.remote_enable=1\n" \

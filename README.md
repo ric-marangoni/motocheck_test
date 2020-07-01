@@ -3,11 +3,13 @@
 The project runs on docker containers.
 
 ### Running the Project
+
 ```
-$ ./bin/runenv
+$ ./bin/runenv.sh
 ```
 
 ### Composer
+
 ```
 $ composer install
 ```
@@ -30,11 +32,13 @@ $ sudo apt-get install nodejs -y
 ```
 
 ### Yarn
+
 ```
 $ npm i yarn
 ```
 
 ### Building the Frontend
+
 ```
 $ yarn && yarn build:development
 ```
